@@ -52,7 +52,7 @@ const RetailerSupport = () => {
           Contact Support
         </h1>
         <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-          Get in touch with the right people at <span className="text-indigo-600 font-semibold">LegTech</span>.  
+          Get in touch with the right people at <span className="text-indigo-600 font-semibold">Impay</span>.  
           Our retailer success team is here to help you every step of the way.
         </p>
       </motion.div>
@@ -113,7 +113,7 @@ const RetailerSupport = () => {
 
       {/* Footer */}
       <div className="mt-24 text-gray-500 text-sm">
-        © {new Date().getFullYear()} LegTech All Rights Reserved.
+        © {new Date().getFullYear()} Impay All Rights Reserved.
       </div>
     </div>
   );

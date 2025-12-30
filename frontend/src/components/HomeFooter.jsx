@@ -146,7 +146,7 @@ const HomeFooter = () => {
                             </li>
                             <li className="flex items-start">
                                 <Mail className="w-4 h-4 mt-0.5 mr-3 text-blue-400 flex-shrink-0" />
-                                <span>info@legtech.in</span>
+                                <span>info@impay.in</span>
                             </li>
                             <li className="flex items-start">
                                 <Clock className="w-4 h-4 mt-0.5 mr-3 text-blue-400 flex-shrink-0" />
@@ -182,7 +182,7 @@ const HomeFooter = () => {
 
                     {/* Center: Copyright */}
                     <p className="text-center mb-4 md:mb-0">
-                        © 2025 LegTech. All rights reserved.
+                        © 2025 Impay. All rights reserved.
                         {/* Development by{" "}
     <a
       href="https://local-stowards.netlify.app/"

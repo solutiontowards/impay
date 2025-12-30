@@ -100,8 +100,8 @@ const Contact = () => {
                 <InfoItem
                   icon={<Mail className="w-6 h-6 text-blue-500" />}
                   title="Email"
-                  content="info@legtech.in"
-                  href="mailto:info@legtech.in"
+                  content="info@impay.in"
+                  href="mailto:info@impay.in"
                 />
                 <InfoItem
                   icon={<Phone className="w-6 h-6 text-blue-500" />}
@@ -124,7 +124,7 @@ const Contact = () => {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                title="LegTech Location"
+                title="Impay Location"
               ></iframe>
             </div>
           </div>

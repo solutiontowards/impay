@@ -56,7 +56,7 @@ Thank you for submitting your KYC documents. Your application is now under revie
 We will notify you once the verification process is complete. This usually takes 24-48 hours.
 
 Best regards,
-The Legtech Team`;
+The Impay Team`;
 
   try {
     await sendGenericWhatsAppMessage(req.user.mobile, kycSubmissionMessage);

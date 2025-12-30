@@ -47,7 +47,7 @@ const ComingSoon = () => {
 
         {/* Footer */}
         <p className="text-xs text-gray-400">
-          © {new Date().getFullYear()} LegTech Fintech Systems
+          © {new Date().getFullYear()} Impay Fintech Systems
         </p>
       </motion.div>
 

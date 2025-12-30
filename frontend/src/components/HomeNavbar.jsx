@@ -63,7 +63,7 @@ const HomeNavbar = () => {
         <Link to="/" className="flex items-center">
           <img
             src="/logo.png"
-            alt="LegTech Logo"
+            alt="Impay Logo"
             className="h-12 w-auto object-contain"
           />
         </Link>

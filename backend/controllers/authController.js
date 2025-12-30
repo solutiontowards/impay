@@ -15,9 +15,9 @@ async function sendWhatsApp(mobile, code) {
   const msg = `Dear User,
 Your One-Time Password (OTP) for login is ${code}.
 For your security, please do not share this code with anyone.
-If you did not request this OTP, kindly contact Legtech Support immediately at 7029-9595-52.
+If you did not request this OTP, kindly contact Impay Support immediately at 7029-9595-52.
 Thank you,
-Legtech Team`;  // The new API requires a generic message sending function.
+Impay Team`;  // The new API requires a generic message sending function.
   // We will call it and throw an error if it fails, so the OTP process is halted.
   await sendGenericWhatsAppMessage(mobile, msg, true);
 }
@@ -27,9 +27,9 @@ async function sendForgotPasswordWhatsApp(mobile, code) {
   const msg = `Dear User,
 Your One-Time Password (OTP) for resetting your password is ${code}.
 For your security, please do not share this code with anyone.
-If you did not request this, please secure your account or contact Legtech Support immediately at 7029-9595-52.
+If you did not request this, please secure your account or contact Impay Support immediately at 7029-9595-52.
 Thank you,
-Legtech Team`;
+Impay Team`;
   await sendGenericWhatsAppMessage(mobile, msg, true);
 }
 
@@ -164,15 +164,15 @@ export const verifyRegisterOtp = asyncHandler(async (req, res) => {
   // Send a welcome message to the newly registered retailer
 const welcomeMessage = `Hello ${name},
 
-Thank you for registering with Legtech! 🎉  
+Thank you for registering with Impay! 🎉  
 Your account has been successfully created.
 
-Please log in at https://legtech.in/login and complete your KYC verification to activate your account and access all services.
+Please log in at https://impay.vercel.app/login and complete your KYC verification to activate your account and access all services.
 
 If you need any assistance, feel free to contact our support team.
 
 Best regards,  
-The Legtech Team`;
+The Impay Team`;
 
 
   try {

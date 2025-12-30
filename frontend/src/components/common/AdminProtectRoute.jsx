@@ -66,7 +66,7 @@ const AdminProtectRoute = ({ children }) => {
                     data-aos-delay="300"
                     className="text-sm text-gray-400 mt-6"
                 >
-                    © {new Date().getFullYear()} Legtech
+                    © {new Date().getFullYear()} Impay
                 </p>
             </div>
         );

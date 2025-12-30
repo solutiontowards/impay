@@ -99,17 +99,17 @@ export const createUser = asyncHandler(async (req, res) => {
   if (role === 'retailer') {
     const welcomeMessage = `Hello ${name},
 
-Thank you for registering with Legtech! 🎉  
+Thank you for registering with Impay! 🎉  
 Your account has been successfully created by an admin.
 
 Your login credentials are:
 Mobile: ${mobile}
 Password: ${password}
 
-Please log in at https://legtech.in/login and complete your KYC verification to activate your account and access all services.
+Please log in at https://impay.vercel.app/login and complete your KYC verification to activate your account and access all services.
 
 Best regards,  
-The Legtech Team`;
+The Impay Team`;
 
     try {
       await sendGenericWhatsAppMessage(mobile, welcomeMessage);
@@ -182,7 +182,7 @@ export const updateKycStatus = asyncHandler(async (req, res) => {
     
     const user = await User.findById(kycRequest.retailerId);
     if (user) {
-      const welcomeMessage = `Hello ${user.name},\n\n🎉 Congratulations! Your KYC has been successfully verified by the Legtech Admin Team.\n\nYou now have full access to all platform features and services.\n\nBest regards,\nTeam Legtech`;
+      const welcomeMessage = `Hello ${user.name},\n\n🎉 Congratulations! Your KYC has been successfully verified by the Impay Admin Team.\n\nYou now have full access to all platform features and services.\n\nBest regards,\nTeam `;
       try {
         await sendGenericWhatsAppMessage(user.mobile, welcomeMessage);
       } catch (error) {
@@ -201,7 +201,7 @@ export const updateKycStatus = asyncHandler(async (req, res) => {
     // You can add a WhatsApp notification here for rejection
     const user = await User.findById(kycRequest.retailerId);
     if (user) {
-      const rejectionMessage = `Hello ${user.name},\n\nWe regret to inform you that your KYC submission has been rejected.\n\nReason: ${rejectionReason}\n\nPlease log in to your dashboard to correct the details and re-submit.\n\nBest regards,\nTeam Legtech`;
+      const rejectionMessage = `Hello ${user.name},\n\nWe regret to inform you that your KYC submission has been rejected.\n\nReason: ${rejectionReason}\n\nPlease log in to your dashboard to correct the details and re-submit.\n\nBest regards,\nTeam Impay`;
       try {
         await sendGenericWhatsAppMessage(user.mobile, rejectionMessage);
       } catch (error) {

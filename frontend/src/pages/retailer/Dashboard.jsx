@@ -161,7 +161,7 @@ const GlobalMessageCard = ({ message }) => {
         {/* Text Section */}
         <div className="flex flex-col">
           {/* <h3 className="text-lg font-semibold tracking-wide">
-            Welcome to <span className="text-yellow-300">Legtech Dashboard</span>
+            Welcome to <span className="text-yellow-300">Impay Dashboard</span>
           </h3> */}
           <p className="text-sm md:text-[15px] mt-1 leading-relaxed text-blue-50 font-medium">
             {message}
